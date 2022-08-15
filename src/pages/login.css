@@ -1,0 +1,136 @@
+
+.login{
+    display: flex;
+    flex:1;
+    background-color:antiquewhite;
+    
+
+}.login__inputBox{
+    display: flex;
+    flex:1;
+
+    justify-content: center;
+    align-items: center;
+
+}
+.login__inputBox > form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 500px;
+    padding: 54px;
+    /* background-color: aquamarine; */
+}
+.login__inputBox > form >div{
+    width: 250px;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    align-items: center;
+    
+    
+}
+.login__inputBox > form > div:nth-child(2){
+    justify-content: space-between;
+
+   /* background-color: blue;! */
+    
+}
+
+.login__inputBox > form >div>input{
+outline-width: 0;
+border: none;
+height: 40px;
+margin-left:20px;
+box-shadow: 0 0 0px 1000px white inset;
+
+}
+.login__inputBox > form >button{
+    width: 250px;
+}
+.sign__inputBox{
+    display: flex;
+    flex:0.55;
+
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.sign__inputBox > form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 500px;
+    padding: 54px;
+    /* background-color: aquamarine; */
+}
+.sign__inputBox > form >div{
+    width: 250px;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    align-items: center;
+    
+    
+}
+.sign__inputBox > form > div:nth-child(3){
+    justify-content: space-between;
+
+   /* background-color: blue;! */
+    
+}
+
+.sign__inputBox > form >div>input{
+outline-width: 0;
+border: none;
+height: 40px;
+margin-left:20px;
+box-shadow: 0 0 0px 1000px white inset;
+
+}
+.sign__inputBox > form >button{
+    width: 250px;
+}
+.login__validation{
+    display: flex;
+    flex:0.45;
+    /* background-color:brown; */
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.login__validation > ul {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    gap:8px;
+    padding: 50px;
+    background-color: aquamarine;
+    border-radius: 15px;
+}
+.login__validation > ul >li{
+    list-style: none;
+    position: relative;
+    color: #fff;
+    font-size: 0.85rem;
+    transition: 0.5s;
+}
+.login__validation > ul >li:before{
+    content:"\f192";
+    width: 20px;
+    height: 10px;
+    font-family: fontAwesome;
+    display: inline-flex;
+}
+.login__validation > ul >li.valid{
+    color:rgba(255,255,255,0.5)
+}
+.login__validation > ul >li.valid::before{
+    content:"\f00c";
+    color:#0f0
+  
+}
